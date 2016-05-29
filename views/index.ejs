@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Index</title>
+</head>
+<body>
+	<div>
+		<p>Testing index</p>
+		<% all_posts.forEach(function(entry){ %>
+			<p>Title is <%= entry.title %> content is <%= entry.content %> created at <%= entry.created_at %></p>
+		<% }); %>
+	</div>
+	<a href="/new">New Post</a>
+</body>
+</html>
